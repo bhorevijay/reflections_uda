@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When i initialize a repository, a hidden file .git is added to the folder.
+The current folder is setup as a master branch. And there is an initial commit. 
+Since there is no current commit, git log throws error.
+The contents of the directory (files in it) are added as untracked files.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is intermediate state between working directory and repository. We can selectively add files to the staging area.
+More than one file in the staging area can be pushed into repository as a logical unit.
+I think, the staging area lets user decide the files to be included in one commit as opposed to committing all files together. 
