@@ -9,4 +9,28 @@ How is the staging area different from the working directory and the repository?
 
 Staging area is intermediate state between working directory and repository. We can selectively add files to the staging area.
 More than one file in the staging area can be pushed into repository as a logical unit.
-I think, the staging area lets user decide the files to be included in one commit as opposed to committing all files together. 
+I think, the staging area lets user decide the files to be included in one commit as opposed to committing all files together.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can run git add for only those files that i want to be part of one commit. 
+Since all the files in staging area are committed together to repository, we have one commit for logic change. 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you are trying some experimental feature which might not go into main branch.
+If these features succeed, then that branch can be merged with the main branch later.
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help me identify which branches contain which commits. It in turn helps me in identifying the branches state, unreachable commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Commits from both branches would be merged into one of the merged branches. The checked out branch label is what the merged branch retains. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging:
+pros: git intelligently identifies the changes that are not done on same area in the code and merges it
+cons: not sure
