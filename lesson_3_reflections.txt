@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+When i would be done with a working feature and i would want it be accessible to others (developers, public),
+i would user a remote repository.
